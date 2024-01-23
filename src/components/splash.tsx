@@ -5,7 +5,7 @@ import React, { useLayoutEffect } from 'react'
 import { Platform } from 'react-native'
 
 import Astronaut from '~/assets/animations/astronaut.json'
-import { RootStackParamList } from '~/navigation'
+import { RootStackParamList } from '~/navigation/RootStack'
 
 type OverviewScreenNavigationProps = StackNavigationProp<RootStackParamList>
 
