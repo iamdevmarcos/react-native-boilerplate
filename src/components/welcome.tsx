@@ -26,14 +26,14 @@ const Welcome = () => {
     <Container>
       <View>
         <Box>
-          <Heading>Expo Boilerplate</Heading>
-          <Description>
+          <Heading testID="Heading.Text">Expo Boilerplate</Heading>
+          <Description testID="Heading.Description">
             🔥 A React-Native starter kit using Expo, React Navigation, Styled Components,
             TypeScript and Eslint.
           </Description>
         </Box>
 
-        <ExternalLink onPress={handleOnPress}>
+        <ExternalLink onPress={handleOnPress} testID="ExternalLink.Button">
           <Label>Visit on Github</Label>
         </ExternalLink>
       </View>
