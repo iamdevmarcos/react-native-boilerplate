@@ -1,0 +1,10 @@
+import { render } from '@testing-library/react-native'
+
+import {{pascalCase name}} from '../{{dashCase name}}'
+
+describe('<{{pascalCase name}} />', () => {
+  it('should render a heading', () => {
+    const { getByText } = render(<{{pascalCase name}} />)
+    expect(getByText('{{pascalCase name}}')).toBeTruthy()
+  })
+})
