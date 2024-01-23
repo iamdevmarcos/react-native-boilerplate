@@ -26,7 +26,7 @@ const Welcome = () => {
     <Container>
       <View>
         <Box>
-          <Heading>⚛ Expo Boilerplate ⚛</Heading>
+          <Heading>Expo Boilerplate</Heading>
           <Description>
             🔥 A React-Native starter kit using Expo, React Navigation, Styled Components,
             TypeScript and Eslint.
