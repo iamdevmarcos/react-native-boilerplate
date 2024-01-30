@@ -1,0 +1,11 @@
+{
+  "language": "English",
+  "screens": {
+      "welcome": {
+          "title": "Expo Boilerplate",
+          "description": "🔥 A React-Native starter kit using Expo, React Navigation, Styled Components, TypeScript and Eslint.",
+          "githubButton": "Visit on Github",
+          "invalidUrl": "Don't know how to open this URL:"
+      }
+  }
+}

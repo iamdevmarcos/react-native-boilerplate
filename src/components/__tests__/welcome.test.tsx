@@ -1,6 +1,19 @@
 import { fireEvent, render } from '@testing-library/react-native'
 
+import i18n from '../../localization/i18n'
 import Welcome from '../welcome'
+
+jest.mock('react-i18next', () => ({
+  useTranslation: () => {
+    return {
+      t: (str: string): string => i18n.t(str)
+    }
+  },
+  initReactI18next: {
+    type: '3rdParty',
+    init: () => {}
+  }
+}))
 
 describe('<Welcome />', () => {
   it('should render a heading', () => {

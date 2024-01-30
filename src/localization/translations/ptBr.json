@@ -1,0 +1,11 @@
+{
+  "language": "Portuguese",
+  "screens": {
+      "welcome": {
+          "title": "Expo Boilerplate",
+          "description": "🔥 Um inicializador de app React-Native usando Expo, React Navigation, Styled Components, TypeScript e Eslint.",
+          "githubButton": "Visite no Github",
+          "invalidUrl": "Erro ao abrir a seguinte URL:"
+      }
+  }
+}

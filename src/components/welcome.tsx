@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Alert, Linking } from 'react-native'
 
 import {
@@ -11,6 +12,8 @@ import {
 } from './styles/welcome.styles'
 
 const Welcome = () => {
+  const { t: translate } = useTranslation()
+
   async function handleOnPress() {
     const githubLink = 'https://github.com/iamdevmarcos/react-native-boilerplate'
 
@@ -18,7 +21,8 @@ const Welcome = () => {
     if (isSupportedLink) {
       await Linking.openURL(githubLink)
     } else {
-      Alert.alert(`Don't know how to open this URL: ${githubLink}`)
+      const invalidUrlMsg = translate('screens.welcome.invalidUrl')
+      Alert.alert(`${invalidUrlMsg} ${githubLink}`)
     }
   }
 
@@ -26,15 +30,15 @@ const Welcome = () => {
     <Container>
       <View>
         <Box>
-          <Heading testID="Heading.Text">Expo Boilerplate</Heading>
+          <Heading testID="Heading.Text">{translate('screens.welcome.title')}</Heading>
+
           <Description testID="Heading.Description">
-            🔥 A React-Native starter kit using Expo, React Navigation, Styled Components,
-            TypeScript and Eslint.
+            {translate('screens.welcome.description')}
           </Description>
         </Box>
 
         <ExternalLink onPress={handleOnPress} testID="ExternalLink.Button">
-          <Label>Visit on Github</Label>
+          <Label>{translate('screens.welcome.githubButton')}</Label>
         </ExternalLink>
       </View>
     </Container>
